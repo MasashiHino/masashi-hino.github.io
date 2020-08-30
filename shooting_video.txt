@@ -12,12 +12,13 @@ delta=0.08;% capital depreciation
 T=50;% simulation periods
 tol=1e-4;% tolerance
 
-%% ’èíó‘Ô’l
+%% steady state values
+
 kss=alpha/(1/beta-(1-delta));
 kss=kss^(1/(1-alpha));% capitla steady state value
 css=kss^alpha-delta*kss;% consumption steady state value
 
-%% ‰Šú’l
+%% initial period values
 
 k0=0.2*kss;%capital lower bound
 c0l=tol;%consumption lower bound
